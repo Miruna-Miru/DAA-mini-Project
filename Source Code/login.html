@@ -1,0 +1,360 @@
+
+    <!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Repo - Login</title>
+        <link rel="icon" href="assets/logo.png">
+        <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="initial-scale=1, width=device-width" />
+     
+        <style>
+            body{
+                background-color: #F9E6E6;
+            }
+
+            #logo{
+                padding-top: 2px;
+                width: 110px;
+                height: 100px;
+                border-top: 45px;
+                border-left: 57px;
+                margin-right: 20px;
+            }
+
+            #title{
+                color: #474BCA;
+                font-size: 36px;
+                font-family: 'Itim';
+                margin-top: 0px;
+                margin-left: 120px;
+                padding-bottom: 0px;
+                height: 2px;
+            }
+
+            #sub-title{
+                font-family: 'Itim';
+                color: black;
+                font-size: 22px;
+                height: 2px;
+                font-weight: 400;
+                word-wrap: break-word;
+                margin-left: 120px;
+                padding-top: 0px;
+                margin-top: 0px;
+            }
+
+.top{
+    align-items: center;
+    width: 100%;
+    
+}
+
+.sign-up button {
+  background-color: #474BCA;
+  border: none;
+  color: white;
+  display: inline-block;
+  border-radius: 4px;
+  width: 75px;
+  height: 27px;
+  margin-left: 800px;
+  margin-top: 10px;
+  
+}
+
+.sign-up button a{
+  text-decoration: none;
+  color: white;
+}
+
+header{
+    display: flex;
+   }
+
+.top-dec .txt{
+    margin-left: 10px;
+}
+
+.log .log-tit #t{
+    font-size: 36px ;
+    font-weight: bold;
+    font-family:'Times New Roman';
+    margin-left: 100px;
+    margin-bottom: 2px;
+
+}
+
+ #grt{
+    font-size: 22px ;
+    font-weight: 100;
+    font-family:'Times New Roman';
+    margin-left: 100px;
+    margin-top: 0px;
+
+}
+
+
+.log-btn{
+    background-color: #FFA3BE;
+    color: white;
+    border: none;
+    margin-left: 100px;
+    border-radius: 5px;
+    width: 600px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.log-btn img{
+    width: 20px;
+}
+
+
+.line-container {
+    display: flex;
+    align-items: center;
+    width: 700px;
+    
+  }
+  
+ #fir-line {
+    flex: 1;
+    height: 1px;
+    margin-left: 100px;
+    
+    background-color:#7c7878;
+  }
+  
+
+  .line {
+    flex: 1;
+    height: 1px;
+  
+    
+    background-color:#7c7878;
+  }
+
+  .text {
+    padding: 0 10px;
+    color: #7c7878;
+  }
+  
+
+  .req{
+    margin-left: 100px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 9px;
+
+  }
+
+  .det{
+    margin-left: 100px;
+    border: none;
+    background-color: #FFA3BE;
+    color: black;
+    border-radius: 5px;
+    width: 600px;
+    height: 40px;
+    text-align: center;
+    font-size: 16px;
+  }
+
+  .det::placeholder{
+    text-align: center;
+    margin-left: 400px;
+    font-size: 14px; 
+ 
+  }
+
+  #rem-p{
+    margin-left: 100px;
+  }
+
+  #rem-p a{
+    margin-left: 370px;
+    text-decoration: none;
+    color: #474BCA;
+    font-weight: 400;
+  }
+
+
+  .final-btn{
+    background-color: #474BCA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 10px;
+    width: 600px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .columns {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.col {
+    flex: 1;
+    margin: 2px;
+}
+
+  #sign-p{
+    margin-left: 300px;
+    font-size: 16px;
+  }
+
+  #sign-p a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #474BCA;
+    font-weight: 500;
+  }
+  
+#ll{
+    display: flex;
+    justify-self: flex-end;
+    margin-left: 200px;
+}
+
+#ll {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.det:focus {
+  border-color: none; 
+  outline: none; 
+  
+}
+
+
+#res{
+  margin-left: 350px;
+  color: black;
+  font-size: 16px;
+  font-style: italic;
+  
+}
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="assets/logo.png" alt="Student - Repo" id="logo">
+                <div class="">
+                    <p id="title">Student Repo <p>
+                    <p id="sub-title"> Fuel Your Education Journey with Shared Wisdom</p>
+                </div>
+            </div>
+            <div class="sign-up"><button id="t-sign"><a href="signup.html">Sign Up</a></button></div>
+           
+            
+        </header>
+        <div class="columns">
+            <div class="col">
+              <div class="log">
+                 <div class="log-tit">
+                    <p id="t">Login</p>
+                     <p id="grt">Hi, Welcome back 👋 </p>
+                 </div>
+
+                 <button class="log-btn"><img src="assets/google.png" >  Login with Google</button>
+                 <br>
+                 <br>
+                <div class="line-container">
+                  <div class="line" id="fir-line"></div>
+                     <div class="text">or Login with Email</div>
+                       <div class="line"></div>
+                </div>
+                 
+                <p class="req">Email</p>
+                <input type="email" placeholder="Enter Email id" class="det" required>
+
+                <p class="req">Password</p>
+                <input type="password" placeholder=" Enter your Password" class="det" id="pass" required>
+                <p id="res"></p>
+            
+                <p id="rem-p"> <input type="checkbox" name="rem" id="rem">Remember me<a href="forgotPassword.html">Forgot Password?</a></p>
+
+                 <a href="home.html"><button class="final-btn" id="fin-btn" >Login</button></a>
+                <p id="sign-p">Not yet registered?<a href="signup.html">Sign Up</a></p>
+           
+        </div>
+        </div>
+    
+                <div class="col">
+                   <img src="assets/login.png" alt="" id="ll">
+                </div>
+    </div>
+    <script>
+        var btn = document.getElementById("fin-btn");
+
+btn.addEventListener("click", function() {
+    var emailInput = document.querySelector('input[type="email"]');
+    var email = emailInput.value.trim();
+    if (email.endsWith("@student.tce.edu")) {
+        window.location.href = "home.html";
+    } else {
+        alert("Please enter a valid email ending with @student.tce.edu");
+        event.preventDefault();
+    }
+});
+
+var bt1 = document.getElementById("t-sign");
+
+bt1.addEventListener("click", function() {
+    window.location.href = "signup.html"; 
+});
+
+
+$(document).ready(function(){
+    $("#pass").on('blur',function(){
+        var pw=$(this).val();
+        if(pw!=='UserOfUser')
+        {
+            $('#res').text('Incorrect password')
+        }
+    });
+    $("#fin-btn").submit(function(event) {
+        event.preventDefault();
+        var formData = $(this).serialize();
+        $.ajax({
+            type: "POST",
+            url: "dummy-login-endpoint", 
+            data: formData,
+            dataType: "json",
+            success: function(response) {
+                if (response.success) {
+                    
+                    window.location.href = "home.html";
+                } else {
+                    
+                    $("#error").text(response.message);
+                }
+            },
+            error: function(xhr, status, error) {
+                console.error(xhr.responseText);
+            }
+        });
+    });
+})
+    </script>
+    </body>
+
+</html>
+
+

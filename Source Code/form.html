@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="css/form_style.css" type="text/css">
+    </head>
+    <body>
+        <center>
+            <p id="Hello"><b>✨✨Hello Again!!✨✨</b></p>
+
+        </center>
+        <br>
+        <hr>
+        <form id="form" >
+             <center>
+               <h1><i>Student repo</i></h1>
+               <img src="assets/Rabbit.jpg" alt="Rabbit image" id="rabbit" width="200" height="200">
+             </center>
+              <div>
+                <label for="name" class="lab">User name : </label><br>
+                <input type="text" name="name" id="name" class="inp" required>
+              </div>
+              <div>
+                <label for="email" class="lab">Email ID :</label><br>
+                <input type="email" name="email" id="email" class="inp" required>
+              </div>
+              <div>
+                <label for="yr" class="lab">Select year :</label><br>
+                <input type="radio" name="yr1" id="yr1" value="1st" class="rad">
+                <label for="yr1" class="rad_lab">1st Year</label><br>
+                <input type="radio" name="yr2" id="yr2" value="2nd" class="rad">
+                <label for="yr2" class="rad_lab">2nd Year</label><br>
+                <input type="radio" name="yr3" id="yr3" value="3rd" class="rad">
+                <label for="yr3" class="rad_lab">3rd Year</label><br>
+                <input type="radio" name="yr4" id="yr4" value="4th" class="rad">
+                <label for="yr4" class="rad_lab">4th Year</label> <br>
+              </div>
+
+              <div>
+                <label for="dep" class="lab" id="dep_sel">Select department : </label><br>
+                <select name="dep" id="dep" class="inp">
+                    <option value="CSE">CSE</option>
+                    <option value="CSBS">CSBS</option>
+                    <option value="IT">IT</option>
+                    <option value="EEE">EEE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="CIVIL">CIVIL</option>
+                    <option value="MECH">MECH</option>
+                    <option value="MECHT">MECHT</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="dob" class="lab">Date of birth :  </label><br>
+                <input type="date" name="dob" id="dob" class="inp" required>
+              </div>
+
+              <div>
+                <label for="im" class="lab">Upload image : </label><br>
+                <input type="file" name="im" id="im" class="inp" required>
+              </div>
+
+              <div>
+                <label for="pn" class="lab">Phone number : </label><br>
+                <input type="tel" name="pn" id="pn" class="inp">
+              </div>
+              <div>
+                <label for="ag" class="lab">Age : </label><br>
+                <input type="number" name="ag" id="ag" class="inp">
+              </div>
+              <div>
+                <label for="ad" class="lab"><strong>Permanent </strong>Address :  </label><br>
+                <textarea name="ad" id="ad" cols="30" rows="3" class="inp"></textarea>
+              </div>
+             
+             <center>
+              <p><strong>Ensure all the information is true to your knowledge.</strong></p>
+             <button class="inp" id="bt" >Submit</button>
+            </center>
+        </form>
+        <hr>
+        <center>
+        <address id="add">
+           👩‍💻Mirunalini.M,<br>
+          📞 - 123456789,<br>
+          📧 - mm@mail.com,<br>
+          📍 - Mdu, TamilNadu.</address>
+        </center>
+
+    </body>
+</html>

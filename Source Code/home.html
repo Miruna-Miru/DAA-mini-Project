@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Repo</title>
+    <link rel="icon" href="assets/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <style>
+     
+body{
+     background-color:white;
+     margin: 0;
+     padding: 0;
+}
+body, .darkMode {
+    background-color: white;
+}
+
+/* Add additional styles for dark mode */
+.darkMode nav {
+    background-color: #2a2424;
+}
+
+.darkMode #tit {
+    color: #ffffff;
+}
+
+.darkMode #sub-tit {
+    color: #cccccc;
+}
+
+.darkMode nav ul li a {
+    color: #ffffff;
+}
+
+
+nav{
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #F9E6E6;  
+}
+
+#mn{
+    width: 40px;
+}
+
+.logo{
+    width: 110px;
+    height: 100px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+
+#tit{
+    color: #474BCA;
+    font-size: 36px;
+    font-family: 'Itim';
+    margin-top: 0px;
+    margin-left: 0;
+    padding-bottom: 0px;
+    height: 2px;
+}
+
+#sub-tit{
+    font-family: 'Itim';
+    color: black;
+    font-size: 18px;
+    height: 2px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+   
+}
+
+nav ul{
+    list-style-type:none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display:inline-block ;
+    margin: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul li a{
+   color: #474BCA;
+   text-decoration: none;
+}
+
+
+ 
+
+nav ul li img{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+#usr{
+    width: 35px;
+}
+
+#wel{
+    margin-left: 20%;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+#wel span{
+    color: #474BCA;
+}
+
+
+
+.card{
+    margin: 20px;
+    color: black;
+    background-color:#F9E6E6;
+    border-radius: 5px;
+    padding: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
+    width: 500px;
+}
+
+
+.dept{
+    width: 20%;
+    height: 20%;
+    
+}
+
+.card a{
+    text-decoration: none;
+}
+
+
+nav ul li:nth-child(1):hover a,
+nav ul li:nth-child(2):hover a,
+nav ul li:nth-child(3):hover a {
+    color: #050624; 
+    font-weight: bold; 
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+
+}
+
+
+      
+    
+    .column {
+        float: left;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    
+    .card {
+        width: 300px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+</head>
+<body>
+<div class="container">
+    <nav>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <p><span id="tit">Student Repo</span> <br><span id="sub-tit">Fuel Your Education Journey with Shared Wisdom</span></p>
+        
+        <ul>
+            <li><a href="#" id="hm" style="color: black;">Home</a> </li>
+            <li><a href="profile.html">Profile</a> </li>
+            <li><a href="settings.html">Settings</a> </li>
+            <li><img src="assets/moon.png" alt="toggle" id="mn"></li>
+            <li><img src="assets/woman.png" alt="user" id="usr"></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="bdy">
+    <p id="wel">Ace every exam: Your one-stop resource for <span>success</span></p>
+    
+     <div class="column">
+       
+        <div class="card" id="cse" >
+            
+            <p><center>CSE</center></p>
+            <center><img src="assets/developer.png" alt="" class="dept"></center>
+            <p>CSE Materials</p>
+      
+        </div>
+
+        <div class="card" id="it">
+            <p><center>IT</center></p>
+            <center><img src="assets/programming.png" alt="" class="dept"></center>
+            <p>IT Materials</p>
+        </div>
+
+        <div class="card" id="csbs">
+            <p><center>CSBS</center></p>
+            <center><img src="assets/programmer.png" alt="" class="dept"></center>
+            <p>CSBS Materials</p>
+        </div>
+
+        <div class="card" id="ds">
+            <p><center>DS</center></p>
+            <center><img src="assets/data-science.png" alt="" class="dept"></center>
+            <p>DS Materials</p>
+        </div>
+        <div class="card" id="mecht">
+            <p><center>MECHT</center></p>
+            <center><img src="assets/logo.png" alt="" class="dept"></center>
+            <p>MECHT Materials</p>
+        </div>
+
+    </div>
+    <div class="column">
+       
+        <div class="card" id="eee">
+            <p><center>EEE</center></p>
+            <center><img src="assets/electrical-circuit.png" alt="" class="dept"></center>
+            <p>EEE Materials</p>
+        </div>
+
+        <div class="card" id="ece">
+            <p><center>ECE</center></p>
+            <center><img src="assets/engineering.png" alt="" class="dept" ></center>
+            <p>ECE Materials</p>
+        </div>
+        <div class="card" id="civil">
+            <p><center>CIVIL</center></p>
+            <center><img src="assets/engineers.png" alt="" class="dept"></center>
+            <p>CIVIL Materials</p>
+        </div>
+         
+        <div class="card" id="mech">
+            <p><center>MECH</center></p>
+            <center><img src="assets/engineering.png" alt="" class="dept"></center>
+            <p>MECH Materials</p>
+        </div>
+    </div>
+   
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    let darkMode = localStorage.getItem("darkMode");
+    const dMToggle = document.querySelector("#mn");
+
+    const enableDM = () => {
+        document.body.classList.add('darkMode');
+        localStorage.setItem('darkMode', 'enabled');
+    };
+
+    const disEnableDM = () => {
+        document.body.classList.remove('darkMode');
+        localStorage.setItem('darkMode', null);
+    };
+
+    dMToggle.addEventListener("click", () => {
+        if (darkMode !== 'enabled') {
+            enableDM();
+            document.getElementById('mn').setAttribute('src','assets/sun.png');
+        
+            document.getElementById('wel').setAttribute('color','white');
+
+            document.getElementById('hm').setAttribute('color','white')
+            darkMode = 'enabled'; // Update darkMode variable
+        } else {
+            disEnableDM();
+            document.getElementById('mn').setAttribute('src','assets/moon.png');
+            darkMode = null; // Update darkMode variable
+        }
+    });
+
+    // Set initial dark mode state based on localStorage
+    if (darkMode === 'enabled') {
+        enableDM();
+    }
+
+
+    
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+        card.addEventListener('click', function() {
+            // Get the department name from the clicked card's ID
+            const department = card.id;
+            // Construct the URL for the respective department HTML page
+            const url = `${department}.html`;
+            // Navigate to the URL
+            navigate(url);
+        });
+    });
+
+    // Function to navigate to a specific URL
+    function navigate(url) {
+        window.location.href = url;
+    }
+});
+
+</script>
+</body>
+</html>

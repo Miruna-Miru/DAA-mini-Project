@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Repo - Sign Up</title>
+    <link rel="icon" href="assets/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <style>
+        body {
+            background-color: #F9E6E6;
+        }
+
+        #logo {
+            padding-top: 2px;
+            width: 110px;
+            height: 100px;
+            border-top: 45px;
+            border-left: 57px;
+            margin-right: 20px;
+        }
+
+        #title {
+            color: #474BCA;
+            font-size: 36px;
+            font-family: 'Itim';
+            margin-top: 0px;
+            margin-left: 120px;
+            padding-bottom: 0px;
+            height: 2px;
+            display: flex;
+        }
+
+        #sub-title {
+            font-family: 'Itim';
+            color: black;
+            font-size: 22px;
+            height: 2px;
+            font-weight: 400;
+            word-wrap: break-word;
+            margin-left: 120px;
+            padding-top: 0px;
+            margin-top: 0px;
+            display: flex;
+        }
+
+        .top {
+            align-items: center;
+            width: 100%;
+        }
+
+        .login button {
+            background-color: #474BCA;
+            border: none;
+            color: white;
+            display: inline-block;
+            border-radius: 4px;
+            width: 75px;
+            height: 27px;
+            margin-left: 800px;
+            margin-top: 10px;
+        }
+
+
+        .login button a{
+            text-decoration: none;
+            color: white;
+        }
+        header {
+            display: flex;
+        }
+
+        .top-dec .txt {
+            margin-left: 10px;
+            display: flex;
+        }
+
+        .columns {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        .col {
+            flex: 1;
+            margin: 2px;
+        }
+
+        #ss {
+            width: 500px;
+            height: 500px;
+            margin-left: 200px;
+        }
+
+.sign .sig-tit #s{
+    font-size: 36px ;
+    font-weight: bold;
+    font-family:'Times New Roman';
+    margin-left: 100px;
+    margin-bottom: 2px;
+}
+
+#grts{
+    font-size: 22px ;
+    font-weight: 100;
+    font-family:'Times New Roman';
+    margin-left: 100px;
+    margin-top: 0px;
+
+}
+
+
+.reqq{
+    margin-left: 100px;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 9px;
+
+  }
+
+  .dett{
+    margin-left: 100px;
+    border: none;
+    background-color: #FFA3BE;
+    color: black;
+    border-radius: 5px;
+    width: 550px;
+    height: 40px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .dett::placeholder{
+    text-align: center;
+    margin-left: 400px;
+    font-size: 14px;
+  }
+
+  #sign-p{
+    margin-left: 300px;
+    font-size: 16px;
+  }
+
+  #sign-p a{
+    text-decoration: none;
+    margin-left: 10px;
+    color: #474BCA;
+    font-weight: 500;
+  }
+
+  .final-btn{
+    background-color: #474BCA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 29px;
+    width: 550px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .final-btn a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .dett:focus {
+    border-color: none; 
+    outline: none; 
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img src="assets/logo.png" alt="Student - Repo" id="logo">
+            <div>
+                <p id="title">Student Repo</p>
+                <p id="sub-title">Fuel Your Education Journey with Shared Wisdom</p>
+            </div>
+        </div>
+        <div class="login"><button><a href="login.html">Login</a></button></div>
+    </header>
+    <div class="columns">
+        <div class="col">
+            <div class="sign">
+                <div class="sig-tit">
+                   <p id="s">Register Now!!</p>
+                   <p id="grts">Hey, Welcome to the community of Learners 👋 </p>
+                </div>
+                
+                <p class="reqq">Username</p>
+                <input id="urn" type="text" placeholder="Enter username" class="dett" required>
+    
+                <p class="reqq">Email</p>
+                <input type="email" id="ema" placeholder="Enter Email" class="dett" required>
+    
+                <p class="reqq">Password</p>
+                <input type="password" id="pwd" placeholder="Enter Password" class="dett" required>
+                
+                <button class="final-btn" id="fin-btn"><a href="#">Sign Up</a></button>
+                <p id="sign-p">Have an account?<a href="login.html">Login</a></p>
+            </div>
+        </div>
+        <div class="col">
+            <img src="assets/sig.png" alt="" id="ss">
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#fin-btn").click(function(event) {
+                event.preventDefault(); // Prevent default form submission
+                
+                // Get input values
+                var username = $('#urn').val().trim();
+                var email = $('#ema').val().trim();
+                var password = $('#pwd').val();
+
+                // Validate email
+                if (!email.endsWith("@student.tce.edu")) {
+                    alert("Please enter a valid email ending with @student.tce.edu");
+                    return;
+                }
+
+                // Validate username length
+                if (username.length <= 4) {
+                    alert("Username must be at least 6 characters long");
+                    return;
+                }
+
+                // Password validation
+                var regex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
+                if (!regex.test(password)) {
+                    alert("Password must contain at least one alphabet, one number, one symbol, and be at least 8 characters long.");
+                    return;
+                }
+
+                // Construct the data object
+                var data = {
+                    email_id: email,
+                    password: password
+                };
+
+                // Send POST request
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost:3000/api/backend",
+                    contentType: "application/json",
+                    data: JSON.stringify(data),
+                    success: function(response) {
+                        // Redirect to home.html or handle success response
+                        window.location.href = "home.html";
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error response
+                        console.error(error);
+                        alert("An error occurred. Please try again later.");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

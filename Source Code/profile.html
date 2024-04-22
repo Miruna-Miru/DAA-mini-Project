@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Repo - Profile</title>
+    <link rel="icon" href="assets/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/profile_style.css">
+</head>
+<body>
+<div class="container">
+    <nav>
+        <img src="assets/logo.png" alt="Logo" class="logo">
+        <p><span id="tit">Student Repo</span> <br><span id="sub-tit">Fuel Your Education Journey with Shared Wisdom</span></p>
+
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="#" id="pr">Profile</a> </li>
+            <li><a href="settings.html">Settings</a> </li>
+            <li><img src="assets/moon.png" alt="toggle" id="mn"></li>
+            <li><img src="assets/woman.png" alt="user" id="usr"></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="area">
+    <div class="pic">
+        <p> <span id="usernameDisplay">Mirunalini</span></p>
+        <img src="assets/woman.png" alt="" id="pic">
+        <label for="up-usr"><img src="assets/edit-info.png" alt="" id="chn"></label>
+        <input type="file" accept="image/png, image/jpg, image/jpeg" id="up-usr">
+    </div>
+
+    <div class="det">
+        <div class="info">
+            <label for="name">Name:</label>
+            <span class="value" id="nameValue">Mirunalini</span>
+            <input type="text" id="nameInput" name="name" value="Mirunalini" style="display: none;">
+        </div>
+        <div class="info">
+            <label for="year">Year:</label>
+            <span class="value" id="yearValue">2nd Year</span>
+            <select id="yearInput" style="display: none;">
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year" selected>2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+            </select>
+        </div>
+        <div class="info">
+            <label for="department">Department:</label>
+            <span class="value" id="departmentValue">Computer Science</span>
+            <input type="text" id="departmentInput" name="department" value="Computer Science" style="display: none;">
+        </div>
+        <div class="info">
+            <label for="email">Email:</label>
+            <span class="value" id="emailValue">example@example.com</span>
+            <input type="email" id="emailInput" name="email" value="example@example.com" style="display: none;">
+        </div>
+    </div>
+    <button id="updateButton">Update</button>
+</div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const updateButton = document.getElementById("updateButton");
+    const inputs = document.querySelectorAll(".info input, .info select");
+    const values = document.querySelectorAll(".info .value");
+
+    // Initially hide input fields
+    inputs.forEach(input => {
+        input.style.display = "none";
+    });
+
+    // Event listener for update button
+    updateButton.addEventListener("click", function() {
+        inputs.forEach(input => {
+            input.style.display = input.style.display === "none" ? "block" : "none";
+        });
+        values.forEach(value => {
+            value.style.display = value.style.display === "none" ? "inline-block" : "none";
+        });
+
+        if (updateButton.textContent === "Update") {
+            updateButton.textContent = "Save";
+        } else {
+            updateButton.textContent = "Update";
+            // Update displayed values with input values
+            values.forEach(value => {
+                const inputId = value.getAttribute("id").replace("Value", "Input");
+                value.textContent = document.getElementById(inputId).value;
+            });
+        }
+    });
+});
+</script>
+</body>
+</html>

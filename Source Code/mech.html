@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Repo- MEC</title>
+    <link rel="icon" href="assets/logo.png">
+    <link href='https://fonts.googleapis.com/css?family=Itim' rel='stylesheet'>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/cse_style.css">
+    
+    <script src="js/search.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <img src="assets/logo.png" alt="Logo" class="logo">
+            <p><span id="tit">Student Repo</span> <br><span id="sub-tit">Fuel Your Education Journey with Shared Wisdom</span></p>
+            
+            <ul>
+                <li><a href="home.html">Home</a> </li>
+                <li><a href="profile.html">Profile</a> </li>
+                <li><a href="#">Settings</a> </li>
+                <li><img src="assets/moon.png" alt="toggle" id="mn"></li>
+                <li><img src="assets/woman.png" alt="user" id="usr"></li>
+            </ul>
+        </nav>
+    </div>
+
+   
+
+    <div class="filter-sort-search-options">
+        <label for="filter">Filter by type :</label>
+        <select id="filterType">
+            <option value="all">All</option>
+            <option value="Class Materials">Class Materials</option>
+            <option value="Books">Books</option>
+            <option value="Question Papers">Question Papers</option>
+         
+        </select>
+
+        <label for="sort">Sort by :</label>
+        <select id="sort">
+            <option value="default">Default</option>
+            <option value="name">Name</option>
+            <option value="date">Date</option>
+        </select>
+        <label id="sr">Search : </label>
+        <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+
+    <div class="columns">
+
+        <div class="card" id="Algorithms" data-type="Books" data-year="2023">
+            <p><center>Algorithms</center></p>
+            <embed src="assets/BK/Introduction.to.Algorithms.4th.Leiserson.Stein.Rivest.Cormen.MIT.Press.9780262046305.EBooksWorld.ir.pdf" type="application/pdf" width="100%" height="300px" />
+            <p>Type : Book Author : Leiserson</p>
+        </div>
+
+        
+
+        <div class="card" id="Discrete Maths" data-type="Books" data-year="2023">
+            <p><center>Discrete Maths</center></p>
+            <embed src="assets/BK/22CS410 Course Material.pdf" type="application/pdf" width="100%" height="200px" />
+            <p>Type : Book Author : Devor</p>
+        </div>
+
+        <div class="card" id="Project Management" data-type="Books" data-year="2021">
+            <p><center>Project Management</center></p>
+            <embed src="assets/BK/Erik W. Larson Clifford F. Gray  Project Management The Managerial Process.pdf" type="application/pdf" width="100%" height="200px" />
+            <p>Type : Book Author :Erik </p>
+        </div>
+
+
+        <div class="card" id="Indian Polity" data-type="Books" data-year="2024">
+            <p><center>Indian Polity</center></p>
+            <embed src="assets/BK/Indian Polity by M Laxmikanth.pdf" type="application/pdf" width="100%" height="200px" />
+            <p>Type : Book Author :Laxmikanth</p>
+        </div>
+
+        <div class="card" id="Question Paper" data-type="Question Papers" data-year="2023">
+            <p><center>Question Paper</center></p>
+            <embed src="assets/QP/sem 4 qeustion papers.pdf" type="application/pdf" width="100%" height="200px" />
+            <p>Sem: 4 Year : 2023</p>
+        </div>
+
+       
+
+
+        <div class="card" id="Data Base" data-type="Books" data-year="2022">
+            <p><center>Data Base Management</center></p>
+            <embed src="assets/BK/Silberschatz_A_databases_6th_ed.pdf" type="application/pdf" width="100%" height="300px" />
+            <p>Type : Book Author :Silberschatz</p>
+        </div>
+
+
+        <div class="card" id="Backtracking" data-type="Class Materials" data-year="2023">
+            <p><center>Backtracking</center></p>
+            <embed src="assets/PPT/Backtracking.pdf" type="application/pdf" width="100%" height="300px" />
+            <p>Type : Class Materials</p>
+        </div>
+
+        <div class="card" id="Bellman Ford" data-type="Class Materials" data-year="2023">
+            <p><center>Bellman Ford</center></p>
+            <embed src="assets/PPT/Bellman-Ford algorithm.pdf" type="application/pdf" width="100%" height="300px" />
+            <p>Type : Class Materials</p>
+        </div>
+        <!-- Add more card elements here with appropriate data-type attributes -->
+    </div>
+</body>
+</html>
