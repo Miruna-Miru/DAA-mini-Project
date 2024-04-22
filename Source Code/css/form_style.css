@@ -1,0 +1,89 @@
+body{
+    background-color: black;
+    color: white;
+}
+#Hello{
+    font-size: 34px;
+    font-style: italic;
+}
+
+#form{
+    border-radius: 12px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    background-color:#333;
+}
+
+.inp{
+    border-radius: 7px;
+    border-style: groove;
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+
+}
+
+.lab{
+    padding: 7px;
+    font-size: 22px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+
+#yr{
+    padding: 7px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+
+}
+
+
+.rad{
+    size: 20px;
+    margin-left:90px ;
+    margin-top: 10px;
+}
+
+
+.rad_lab{
+    font-size: 16px;
+}
+
+#dep_sel{
+    margin-top: 30px;
+    
+}
+
+
+#rabbit{
+    padding: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    size-adjust: 20px;
+    border-radius: 300px;
+    }
+
+
+#bt{
+    box-shadow: wheat;
+    box-sizing: border-box;
+    padding: 15px;
+    padding-left: 15px;
+    border-radius: 8px;
+    background-color: green;
+    color: white;
+}
+
+#bt:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+#add{
+    font-size: 22px;
+}

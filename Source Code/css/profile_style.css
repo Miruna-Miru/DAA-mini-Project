@@ -1,0 +1,249 @@
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+body, .darkMode {
+   background-color: white;
+}
+
+/* Add additional styles for dark mode */
+.darkMode nav {
+   background-color: #2a2424;
+}
+
+.darkMode #tit {
+   color: #ffffff;
+}
+
+.darkMode #sub-tit {
+   color: #cccccc;
+}
+
+.darkMode nav ul li a {
+   color: #ffffff;
+}
+
+
+nav{
+ width: 100%;
+ margin: 0px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px 0;
+ background-color: #F9E6E6;  
+}
+
+#mn{
+   width: 40px;
+}
+
+.logo{
+   width: 110px;
+   height: 100px;
+   margin-right: 0px;
+   cursor: pointer;
+}
+
+
+#tit{
+   color: #474BCA;
+   font-size: 36px;
+   font-family: 'Itim';
+   margin-top: 0px;
+   margin-left: 0;
+   padding-bottom: 0px;
+   height: 2px;
+}
+
+#sub-tit{
+   font-family: 'Itim';
+   color: black;
+   font-size: 18px;
+   height: 2px;
+   font-weight: 400;
+   word-wrap: break-word;
+   margin-left: 0px;
+   padding-top: 0px;
+   margin-top: 0px;
+  
+}
+
+nav ul{
+   list-style-type:none;
+   width: 100%;
+   text-align: right;
+   padding-right: 60px;
+}
+
+nav ul li{
+   display:inline-block ;
+   margin: 10px 20px;
+   font-size: 22px;
+   font-weight: 600;
+}
+
+
+#pr{
+    color: #2a2424;
+}
+nav ul li a{
+  color: #474BCA;
+  text-decoration: none;
+}
+
+nav ul li img{
+   display: flex;
+   align-items: center;
+   padding: 10px 20px;
+   cursor: pointer;
+   vertical-align: middle;
+   
+}
+.container {
+   margin: 0;
+   padding: 0;
+}
+
+#usr{
+   width: 35px;
+}
+
+#wel{
+   margin-left: 20%;
+   font-size: 32px;
+   font-weight: bold;
+   font-family: 'Poppins';
+}
+
+#wel span{
+   color: #474BCA;
+}
+
+
+nav ul li:nth-child(1):hover a,
+nav ul li:nth-child(2):hover a,
+nav ul li:nth-child(3):hover a {
+    color: #050624; 
+    font-weight: bold; 
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+
+}
+
+.area{
+    width: calc(100%-200px);
+    background-color: #F9E6E6;
+    margin: 7%;
+    border-radius: 8px;
+    
+}
+
+.area .pic{
+    position: relative;
+}
+
+
+.area .pic p{
+    margin-left: 45%;
+    align-self: center;
+    font-family: Itim;
+    font-size: 28px;
+}
+
+.area .pic img{
+    margin-left: 45%;
+    border-radius: 50%;
+    width: 150px;
+    position: relative;
+}
+
+.area .pic img::after{
+    content: ' ';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('html/assets/woman.png') center center no-repeat;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+#chn {
+    position: absolute;
+    top: 88%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    z-index: 1;
+}
+
+#up-usr {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+.det {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.info label {
+    font-weight: bold;
+    font-size: 24px;
+    color: #474BCA;
+    display: block;
+}
+
+.info input[type="text"],
+.info input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 5px;
+    font-family: 'Poppins';
+}
+
+/* Adjustments for dark mode */
+.darkMode .info label {
+    color: #ffffff;
+}
+
+.darkMode .info input[type="text"],
+.darkMode .info input[type="email"] {
+    background-color: #2a2424;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+#updateButton{
+    color: white;
+    background-color: #474BCA;
+    border-radius: 5px;
+    padding: 2px;
+    margin-left: 92%;
+    margin-bottom: 1%;
+    width: 7%;
+    height: 5%;
+    border: none;
+    border-color: none;
+}
+
+#updateButton:hover{
+     background-color: rgb(193, 126, 232);
+     margin-left: 92%;
+     margin-bottom: 1%;
+     transform: scale(1.07); 
+    transition: transform 0.3s ease; 
+}

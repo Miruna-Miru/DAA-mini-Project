@@ -1,0 +1,41 @@
+#top{
+    width: 339.55 ;
+    height : 276.42;
+    transform: 'rotate(126.90deg)';
+   
+    background : '#FF5875';
+}
+
+body{
+    background-color: #F9E6E6;
+    }
+
+#logo_splash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px; /* This ensures the container takes up the full height of the viewport */
+    margin-left: 550px;
+    padding: 2px;
+}
+
+#title{
+    color: #474BCA;
+    font-size: 96px;
+    font-family: 'Itim';
+    margin-top: 0px;
+    margin-left: 460px;
+    padding-bottom: 0px;
+}
+
+#sub-title {
+    font-family: 'Itim';
+    color: black;
+    font-size: 32px;
+    height: 2px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 400px;
+    margin-top: 4px; /* Adjusted margin */
+    padding-top: 0px;
+}

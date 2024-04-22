@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+}
+
+nav ul li:nth-child(1):hover a,
+nav ul li:nth-child(2):hover a,
+nav ul li:nth-child(3):hover a {
+    color: #050624; 
+    font-weight: bold; 
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+
+}
+#usr{
+    width: 35px;
+}
+
+#wel{
+    margin-left: 20%;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+#wel span{
+    color: #474BCA;
+}
+body, .darkMode {
+    background-color: white;
+}
+
+/* Add additional styles for dark mode */
+.darkMode nav {
+    background-color: #2a2424;
+}
+
+.darkMode #tit {
+    color: #ffffff;
+}
+
+.darkMode #sub-tit {
+    color: #cccccc;
+}
+
+.darkMode nav ul li a {
+    color: #ffffff;
+}
+
+
+nav{
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #F9E6E6;  
+}
+
+#mn{
+    width: 40px;
+}
+
+.logo{
+    width: 110px;
+    height: 100px;
+    margin-right: 0px;
+    cursor: pointer;
+}
+
+
+#tit{
+    color: #474BCA;
+    font-size: 36px;
+    font-family: 'Itim';
+    margin-top: 0px;
+    margin-left: 0;
+    padding-bottom: 0px;
+    height: 2px;
+}
+
+#sub-tit{
+    font-family: 'Itim';
+    color: black;
+    font-size: 18px;
+    height: 2px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-left: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+   
+}
+
+nav ul{
+    list-style-type:none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li{
+    display:inline-block ;
+    margin: 10px 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav ul li a{
+   color: #474BCA;
+   text-decoration: none;
+}
+
+nav ul li img{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    vertical-align: middle;
+    
+}
+
+.filter-sort-options {
+    margin-top: 5px;
+    margin-left: 2%;
+    margin-right: 100px;
+    font-size: 22px;
+}
+
+.filter-sort-options option{
+    margin-left: 5px;
+    border: none;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal width columns */
+    gap: 20px; /* Gap between cards */
+    padding: 20px;
+}
+
+.card {
+    background-color: #F9E6E6;  
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+.card embed {
+    width: 300px;
+    height: 250px;
+   
+}
+
+.card p {
+    text-align: center;
+}
+
+
+.filter-sort-search-options{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+
+.filter-sort-search-options label{
+    font-size: 22px;
+    margin-left: 10px;
+}
+
+.filter-sort-search-options select{
+    margin-left: 5px;
+    margin-right: 30px;
+}
+
+
+
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; /* Blue color, you can change it */
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+    backdrop-filter: blur(1px); /* Apply blur effect to the overlay */
+    z-index: 9998; /* Ensure the overlay is behind the popup box */
+    display: none; /* Initially hidden */
+}
+
+.popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure the popup appears above the overlay */
+    width: 300px; /* Adjust width as needed */
+    max-width: 90%; /* Ensure it doesn't exceed the screen width */
+    height: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: none;
+}

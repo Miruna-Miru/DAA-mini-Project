@@ -1,0 +1,115 @@
+body{
+    background-color:white;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:nth-child(1):hover a,
+nav ul li:nth-child(2):hover a,
+nav ul li:nth-child(3):hover a {
+    color: #050624; 
+    font-weight: bold; 
+    text-decoration: underline;
+    transition: transform 0.3s ease;
+
+}
+
+
+nav{
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: #F9E6E6;  
+  }
+  
+  #mn{
+      width: 40px;
+  }
+  
+  .logo{
+      width: 110px;
+      height: 100px;
+      margin-right: 0px;
+      cursor: pointer;
+  }
+  
+  
+  #tit{
+      color: #474BCA;
+      font-size: 36px;
+      font-family: 'Itim';
+      margin-top: 0px;
+      margin-left: 0;
+      padding-bottom: 0px;
+      height: 2px;
+  }
+  
+  #sub-tit{
+      font-family: 'Itim';
+      color: black;
+      font-size: 18px;
+      height: 2px;
+      font-weight: 400;
+      word-wrap: break-word;
+      margin-left: 0px;
+      padding-top: 0px;
+      margin-top: 0px;
+     
+  }
+  
+  nav ul{
+      list-style-type:none;
+      width: 100%;
+      text-align: right;
+      padding-right: 60px;
+  }
+  
+  nav ul li{
+      display:inline-block ;
+      margin: 10px 20px;
+      font-size: 22px;
+      font-weight: 600;
+  }
+  
+  nav ul li a{
+     color: #474BCA;
+     text-decoration: none;
+  }
+
+  #set{
+    color: #050624;
+    text-decoration: none;
+  }
+  nav ul li img{
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      cursor: pointer;
+      vertical-align: middle;
+      
+  }
+  .container {
+      margin: 0;
+      padding: 0;
+  }
+  
+  #usr{
+      width: 35px;
+  }
+  
+  #wel{
+      margin-left: 20%;
+      font-size: 32px;
+      font-weight: bold;
+      font-family: 'Poppins';
+  }
+  
+  #wel span{
+      color: #474BCA;
+  }
+  
+  
+  
